@@ -9,7 +9,7 @@ const About = () =>{
       <Text pt='3' fontWeight='bold' textAlign='left' fontSize='4xl' maxW='400'>We design and develop web for startup, small and medium businesses</Text>
       </Box>
       </Flex>
-      <img src='/about.jpg'/>
+      <Image src='/about.jpg'/>
     </Box>
   )
 }
