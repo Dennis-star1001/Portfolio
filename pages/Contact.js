@@ -2,8 +2,10 @@ import { Button } from "@chakra-ui/button";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/input";
 import { Box, Flex, Link, Stack, Text, VStack } from "@chakra-ui/layout";
-import { HStack, Textarea } from "@chakra-ui/react";
+import { HStack, Icon, Textarea } from "@chakra-ui/react";
 import { BsPhone } from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';MdPermIdentity
+import { MdPermIdentity } from 'react-icons/md';
 const Contact = () => {
   return (
     <>
@@ -15,26 +17,35 @@ const Contact = () => {
               <HStack>
                 <FormControl w='80'>
                   <FormLabel>Name:</FormLabel>
-                  <Input
-                    id='text'
-                    _focus={{
-                      border: ' 1px solid #48bb78',
-                    }} />
-
-                  <FormLabel>Mail:</FormLabel>
-                  <Input
-                    type='text'
-                    _focus={{
-                      border: ' 1px solid #48bb78',
-                    }}
-
+                  <InputGroup>
+                  
+                  <InputLeftElement
+                    pointerEvents="none"
+                    Icon mt='3' h='5' as={ MdPermIdentity} 
+                   
                   />
+                  
+                  <Input type="tel" placeholder="Name" />
+                </InputGroup>
+                  <FormLabel>Mail:</FormLabel>
+                  <InputGroup>
+                  
+                  <InputLeftElement
+                    pointerEvents="none"
+                    Icon mt='3' h='5' as={ AiOutlineMail} 
+                   
+                  />
+                  
+                  <Input type="tel" placeholder="Email address" />
+                </InputGroup>
                   <FormLabel>Phone:</FormLabel>
                   <InputGroup>
+                  
                     <InputLeftElement
                       pointerEvents="none"
-                      children={<BsPhone color="gray.300" />}
+                      Icon mt='3' h='5' as={BsPhone} 
                     />
+                    
                     <Input type="tel" placeholder="Phone number" />
                   </InputGroup>
                   <Box >
