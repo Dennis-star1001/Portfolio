@@ -3,7 +3,7 @@ import { Box, VStack } from "@chakra-ui/layout";
 const Projects = () => {
   return (
     <>
-      <Box bg='' h='auto'>
+      <Box bg='' h='90vh'>
 
         <VStack justifyContent='left' alignItems='center' spacing='10' p='10'>
           <Box h='40' bg='#fff' width='xl'></Box>
