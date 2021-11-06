@@ -25,7 +25,7 @@ export default function Home() {
               <Button w='28'  onClick={() => Router.push('/Contact')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
             </VStack>
             <Box pt='10'>
-              <Image src='/first.svg' width='600' />
+              <Image src='/first.svg' width='600'height='500' />
             </Box>
           </Flex>
         </Box>
