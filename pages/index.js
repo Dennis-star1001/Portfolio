@@ -55,16 +55,16 @@ export default function Home() {
             <HStack spacing='1' alignItems='center' color='black'>
 
               <AnchorLink href='#home'>
-                <Button fontWeight='light' onClick={() => Router.push('/')}><Text>Home</Text></Button>
+                <Button fontWeight='light'><Text>Home</Text></Button>
               </AnchorLink>
               <AnchorLink href='#about'>
-                <Button fontWeight='light' onClick={() => Router.push('/')}>About</Button>
+                <Button fontWeight='light'>About</Button>
               </AnchorLink>
               <AnchorLink href='#project'>
-                <Button fontWeight='light' onClick={() => Router.push('/')}>Project</Button>
+                <Button fontWeight='light'>Project</Button>
               </AnchorLink>
               <AnchorLink href='#contact'>
-                <Button fontWeight='light' onClick={() => Router.push('/')}>Contact</Button>
+                <Button fontWeight='light'>Contact</Button>
               </AnchorLink>
             </HStack>
 
@@ -85,7 +85,9 @@ export default function Home() {
                         <Text color='#9da2ab' fontSize='2xl' fontWeight='normal'>I am a Frontend Developer and UI/UX Developer</Text>
                         <Text color='#9d9d9d' fontSize='sm'>Your satisfaction is our priority</Text>
                       </motion.div>
+                      <AnchorLink href='#contact'>
                       <Button w='28' onClick={() => Router.push('/')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
+                      </AnchorLink>
                     </VStack>
                     <motion.div variants={fadInUp} pt='10'>
                       <Image src='/first.svg' alt='dennis' width='500' height='500' />
