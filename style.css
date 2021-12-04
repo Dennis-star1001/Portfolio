@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  .body{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing-page{
+    height: 100vh;
+  }
+  .flex{
+    justify-content: center;
+   display:flex;
+   flex-direction: column;
+  }
+  .main-png{
+    height: 200px;
+    width: 400px;
+  }
+  .about{
+    justify-content: space-around;
+    display:flex;
+    flex-direction: column;
+  }
+ }

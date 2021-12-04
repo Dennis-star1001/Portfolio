@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
 
-    <VStack justifyContent='center' w='auto' bg='white'>
+    <VStack className='body' justifyContent='center' w='auto' bg='white'>
       {/* NAVBAR */}
       <Box>
         <Box bg='white' borderBottom='1px solid #f2f2f2' id='home'>
@@ -76,9 +76,9 @@ export default function Home() {
             <Box bg='white' p="10">
 
 
-              <Box h='90vh' borderBottom='1px solid #f2f2f2'>
+              <Box h='90vh' borderBottom='1px solid #f2f2f2' className='landing-page'>
                 <motion.div variants={stagger}>
-                  <Flex justifyContent='space-around' alignItems='center' >
+                  <Flex className='flex' justifyContent='space-around' alignItems='center' >
                     <VStack align='left' spacing='5'>
                       <motion.div variants={fadInUp}>
                         <Text color='#000' fontSize='70' fontWeight='medium' maxW='xl'>Dennis Charity</Text>
@@ -86,11 +86,14 @@ export default function Home() {
                         <Text color='#9d9d9d' fontSize='sm'>Your satisfaction is our priority</Text>
                       </motion.div>
                       <AnchorLink href='#contact'>
-                      <Button w='28' onClick={() => Router.push('/')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
+                        <Button w='28' onClick={() => Router.push('/')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
                       </AnchorLink>
                     </VStack>
                     <motion.div variants={fadInUp} pt='10'>
-                      <Image src='/first.svg' alt='dennis' width='500' height='500' />
+                      <Box className='main-png'>
+                        <Image src='/first.svg' alt='dennis' width='500' height='500' />
+                      </Box>
+
                     </motion.div>
                   </Flex>
                 </motion.div>
@@ -103,20 +106,20 @@ export default function Home() {
 
         <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate'>
           <Box pb='28' bg='white' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
-            <Flex justifyContent='space-around' h='fit-content' pt='10'>
+            <Flex className='about' justifyContent='space-around' h='fit-content' pt='10'>
               <motion.div variants={fadInUp} >
                 <VStack justifyContent='left'>
                   <Text textAlign='left' fontSize='3xl' fontWeight='bold' color='black' pr='200'>About me</Text>
                   <VStack pr='5'>
                     <HStack>
                       <Box border='1px solid #f2f2f2' maxW='400px' borderRadius='xl'>
-                        <Text textAlign='left' p='2' color='#515660' fontWeight='medium'>
+                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>
                           Hi, i am Temoye Dennis Charity. I am a 20 year old Boy. I am just interested in creating something beautiful for you with my Skills</Text>
-                          <Text textAlign='left' p='2' color='#515660' fontWeight='medium'>I am a Frontend Developer</Text>
-                          <Text textAlign='left' p='2' color='#515660' fontWeight='medium'>Tools: ReactJS, Chakra UI, Javascript, CSS</Text>
-                          <Text textAlign='left' p='2' color='#515660'></Text>
+                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>I am a Frontend Developer</Text>
+                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>Tools: ReactJS, Chakra UI, Javascript, CSS</Text>
+                        <Text textAlign='left' p='4' color='#515660'></Text>
                       </Box>
-                     
+
                     </HStack>
                   </VStack>
                 </VStack>
@@ -137,9 +140,9 @@ export default function Home() {
           <VStack pt='20'>
             <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='auto' w='auto'>
-                <Image src='/M-system.png' alt='management system' height='300' width='900px' />
+                <Image src='/M-system.png' alt='management system' height='300' width='700px' />
               </Box>
-              <Box maxW='56'  pb='5'>
+              <Box maxW='56' pb='5'>
                 <VStack justifyContent='left'>
                   <Text color='black' fontSize='xl'>Management system</Text>
                   <Text color='#cacaca'>Language: ReactJS</Text>
@@ -148,14 +151,14 @@ export default function Home() {
               </Box>
             </VStack>
             <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-            <Box border='1px solid #f2f2f2' h='auto' w='auto'>
-                <Image src='/idea.png' alt='management system' height='300' width='900px' />
+              <Box border='1px solid #f2f2f2' h='auto' w='auto'>
+                <Image src='/idea.png' alt='management system' height='300' width='700px' />
               </Box>
               <Box maxW='56'>
                 <VStack>
                   <Text color='black' fontSize='xl'>Ultrawit</Text>
                   <Text color='#cacaca'>UI/UX with figma</Text>
-                 
+
                 </VStack>
               </Box>
             </VStack>
