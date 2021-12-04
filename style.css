@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   body{
-    padding-left: 300px;
+    padding-left: 400px;
     display:flex;
     flex-direction: column;
     justify-content: center;
