@@ -135,30 +135,30 @@ export default function Home() {
           <Text fontSize='sm' color='black'>This are my projects</Text>
 
           <VStack pt='20'>
-            <Flex flexDirection='row-reverse' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-              <Box border='1px solid #f2f2f2' h='40' w='300px'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
+            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+              <Box border='1px solid #f2f2f2' h='auto' w='auto'>
+                <Image src='/M-system.png' alt='management system' height='300' width='900px' />
               </Box>
-              <Box maxW='56'>
-                <VStack>
+              <Box maxW='56'  pb='5'>
+                <VStack justifyContent='left'>
                   <Text color='black' fontSize='xl'>Management system</Text>
                   <Text color='#cacaca'>Language: ReactJS</Text>
                   <Text color='#cacaca'>Styling Language: Chakra ui</Text>
                 </VStack>
               </Box>
-            </Flex>
-            <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-              <Box border='1px solid #f2f2f2' h='40' w='300px'>
-                <Image src='/idea.png' alt='management system' height='160' width='300' />
+            </VStack>
+            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+            <Box border='1px solid #f2f2f2' h='auto' w='auto'>
+                <Image src='/idea.png' alt='management system' height='300' width='900px' />
               </Box>
               <Box maxW='56'>
                 <VStack>
                   <Text color='black' fontSize='xl'>Ultrawit</Text>
                   <Text color='#cacaca'>UI/UX with figma</Text>
-                  <Text color='#cacaca'>Styling Language: Chakra ui</Text>
+                 
                 </VStack>
               </Box>
-            </Flex>
+            </VStack>
             {/* <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='40' w='300px'>
                 <Image src='/headset.jpg' alt='management system' height='160' width='300' />
