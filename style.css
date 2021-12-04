@@ -1,9 +1,10 @@
 @media screen and (max-width: 768px) {
-  .body{
-    width: 100vw;
+  body{
+    padding-left: 200px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+
   }
   .landing-page{
     height: 100vh;

@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
 
-    <VStack className='body' justifyContent='center' w='auto' bg='white'>
+    <VStack justifyContent='center' w='auto' bg='white'>
       {/* NAVBAR */}
       <Box>
         <Box bg='white' borderBottom='1px solid #f2f2f2' id='home'>
@@ -72,8 +72,8 @@ export default function Home() {
           <Divider />
         </Box>
         <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-          <Box >
-            <Box bg='white' p="10">
+          <Box className='body'>
+            <Box bg='white' p="10"  > 
 
 
               <Box h='90vh' borderBottom='1px solid #f2f2f2' className='landing-page'>
