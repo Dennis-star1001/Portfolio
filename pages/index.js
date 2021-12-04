@@ -76,7 +76,7 @@ export default function Home() {
             <Box bg='white' p="10"  >
 
 
-              <Box h='90vh' borderBottom='1px solid #f2f2f2' className='landing-page'>
+              <Box borderBottom='1px solid #f2f2f2'  className='landing-page'>
                 <motion.div variants={stagger}>
                   <Flex className='flex' justifyContent='space-around' alignItems='center' >
                     <VStack align='left' spacing='5'>
@@ -105,7 +105,7 @@ export default function Home() {
         {/* ABOUT PAGE */}
 
         <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate' h='100vh'>
-          <Box pb='28' bg='white' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
+          <Box pb='28' bg='white' className='about' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
             <Flex className='about' justifyContent='space-around' h='fit-content' pt='10'>
               <motion.div variants={fadInUp} >
                 <VStack justifyContent='left'>
@@ -133,7 +133,7 @@ export default function Home() {
         </motion.div>
 
         {/* PROJECTS */}
-        <VStack bg='white' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
+        <VStack className='project' bg='white' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
           <Text color='black' fontWeight='bold' fontSize='3xl'>Choose your favorite Project</Text>
           <Text fontSize='sm' color='black'>This are my projects</Text>
 

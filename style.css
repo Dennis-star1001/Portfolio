@@ -7,8 +7,22 @@
 
   }
   .landing-page{
+    margin-top: 100px;
+    margin-bottom: 100px;
     height: 100vh;
   }
+   /*
+  .about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100vh;
+  }
+  .Contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100vh;
+  }
+   */
   .flex{
     justify-content: center;
    display:flex;
