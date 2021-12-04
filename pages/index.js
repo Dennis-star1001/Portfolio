@@ -103,7 +103,7 @@ export default function Home() {
 
         <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate'>
           <Box pb='28' bg='white' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
-            <Flex justifyContent='left' h='fit-content' pt='10'>
+            <Flex justifyContent='space-around' h='fit-content' pt='10'>
               <motion.div variants={fadInUp} >
                 <VStack justifyContent='left'>
                   <Text textAlign='left' fontSize='3xl' fontWeight='bold' color='black' pr='200'>About me</Text>
@@ -121,8 +121,8 @@ export default function Home() {
                   </VStack>
                 </VStack>
               </motion.div>
-              <VStack justifyContent='center' alignItems='center'  >
-                <Image src='/desk.jpg' alt='about' height='500' width='730' />
+              <VStack justifyContent='center' alignItems='center'>
+                <Image src='/desk.jpg' alt='about' height='300' width='500' />
               </VStack>
             </Flex>
 
@@ -135,7 +135,7 @@ export default function Home() {
           <Text fontSize='sm' color='black'>This are my projects</Text>
 
           <VStack pt='20'>
-            <Flex flexDirection='row-reverse' align='center' justifyContent='space-around' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+            <Flex flexDirection='row-reverse' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='40' w='300px'>
                 <Image src='/M-system.png' alt='management system' height='160' width='300' />
               </Box>
@@ -147,19 +147,19 @@ export default function Home() {
                 </VStack>
               </Box>
             </Flex>
-            <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' borderTop='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+            <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='40' w='300px'>
-                <Image src='/boycode.jpg' alt='management system' height='160' width='300' />
+                <Image src='/idea.png' alt='management system' height='160' width='300' />
               </Box>
               <Box maxW='56'>
                 <VStack>
-                  <Text color='black' fontSize='xl'>Management system</Text>
-                  <Text color='#cacaca'>Language: ReactJS</Text>
+                  <Text color='black' fontSize='xl'>Ultrawit</Text>
+                  <Text color='#cacaca'>UI/UX with figma</Text>
                   <Text color='#cacaca'>Styling Language: Chakra ui</Text>
                 </VStack>
               </Box>
             </Flex>
-            <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' borderTop='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+            {/* <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='40' w='300px'>
                 <Image src='/headset.jpg' alt='management system' height='160' width='300' />
               </Box>
@@ -170,7 +170,7 @@ export default function Home() {
                   <Text color='#cacaca'>Styling Language: Chakra ui</Text>
                 </VStack>
               </Box>
-            </Flex>
+            </Flex> */}
           </VStack>
           {/* <VStack pr='5' spacing='10'>
             <HStack spacing='10'>
