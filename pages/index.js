@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
 
-    <VStack justifyContent='center' bg='white'>
+    <VStack justifyContent='center' bg='white' h='auto'>
       {/* NAVBAR */}
       <Box>
         <Box bg='white' borderBottom='1px solid #f2f2f2' id='home'>
@@ -205,17 +205,17 @@ export default function Home() {
         </VStack>
 
         {/* CONTACT PAGE */}
-        <Box bg='white'>
+        <Box bg='white' className='Contact'>
           <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' id='contact'>
 
 
 
 
             <motion.div variants={fadInUp}>
-              <Box>
+              <Box h='100vh'>
 
 
-                <VStack spacing='5'>
+                <VStack spacing='5' >
                   <Text textAlign='center' color='black' fontSize='4xl' fontWeight='bold'>Contact</Text>
                   <HStack>
                     <FormControl w='auto' color='black' bg='white' borderRadius='2xl' p='8' boxShadow='0 0 10px 0 #e6e6e6'>
