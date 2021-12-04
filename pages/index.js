@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
 
-    <VStack justifyContent='center' w='auto' bg='white'>
+    <VStack justifyContent='center' bg='white'>
       {/* NAVBAR */}
       <Box>
         <Box bg='white' borderBottom='1px solid #f2f2f2' id='home'>
@@ -72,8 +72,8 @@ export default function Home() {
           <Divider />
         </Box>
         <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-          <Box className='body'>
-            <Box bg='white' p="10"  > 
+          <Box >
+            <Box bg='white' p="10"  >
 
 
               <Box h='90vh' borderBottom='1px solid #f2f2f2' className='landing-page'>
@@ -104,7 +104,7 @@ export default function Home() {
 
         {/* ABOUT PAGE */}
 
-        <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate'>
+        <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate' h='100vh'>
           <Box pb='28' bg='white' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
             <Flex className='about' justifyContent='space-around' h='fit-content' pt='10'>
               <motion.div variants={fadInUp} >
@@ -133,7 +133,7 @@ export default function Home() {
         </motion.div>
 
         {/* PROJECTS */}
-        <VStack bg='white' h='auto' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
+        <VStack bg='white' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
           <Text color='black' fontWeight='bold' fontSize='3xl'>Choose your favorite Project</Text>
           <Text fontSize='sm' color='black'>This are my projects</Text>
 
@@ -205,91 +205,91 @@ export default function Home() {
         </VStack>
 
         {/* CONTACT PAGE */}
-
-        <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' id='contact'>
-          <Box h='auto' bg='white' mt='10'>
-
+        <Box bg='white'>
+          <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' id='contact'>
 
 
-            <Flex p='10' justifyContent='space-around' alignItems='center' >
-              <motion.div variants={fadInUp}>
-                <Box>
-
-                  <Box maxW='500' >
-                    <VStack spacing='5'>
-                      <Text textAlign='center' color='black' fontSize='4xl' fontWeight='bold'>Contact</Text>
-                      <HStack>
-                        <FormControl w='auto' color='black' bg='white' borderRadius='2xl' p='8' boxShadow='0 0 10px 0 #e6e6e6'>
-                          <FormLabel>Name:</FormLabel>
-                          <InputGroup>
-
-                            <InputLeftElement
-                              pointerEvents="none"
-                              Icon mt='3' h='5' as={MdPermIdentity}
-
-                            />
-
-                            <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
-                          </InputGroup>
-                          <FormLabel>Mail:</FormLabel>
-                          <InputGroup>
-
-                            <InputLeftElement
-                              pointerEvents="none"
-                              Icon mt='3' h='5' as={AiOutlineMail}
-
-                            />
-
-                            <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
-                          </InputGroup>
-                          <FormLabel>Phone:</FormLabel>
-                          <InputGroup>
-
-                            <InputLeftElement
-                              pointerEvents="none"
-                              Icon mt='3' h='5' as={BsPhone}
-                            />
-
-                            <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
-                          </InputGroup>
-                          <Box>
-                            <FormLabel>Message:</FormLabel>
-                            <Textarea _hover={{ borderColor: '#9d9d9d' }} borderColor='#9d9d9d' maxH='70' id="desc" />
-                          </Box>
-                          <Flex justifyContent='center' pt='5'>
-                            <Button fontSize='large' type='submit'
-                              colorScheme='#9d9d9d'
-                              variant='outline'
-                              color='black'
-                              border='1px solid #9d9d9d'
-                              _hover={{
-                                bgColor: '#9d9d9d',
-                                color: 'white',
-                              }}>
-                              Submit
-                            </Button>
-
-                          </Flex>
-                        </FormControl>
-
-                      </HStack>
 
 
-                    </VStack>
-                  </Box>
-                  <HStack p='6' spacing='5' justifyContent='center'>
-                    <Link color='black'>tdennis.developer@gmail.com</Link>
-                    <Link color='black' _hover={{ bg: 'none' }} bg='none'>Phone: +234 816 354 5039</Link>
+            <motion.div variants={fadInUp}>
+              <Box>
+
+
+                <VStack spacing='5'>
+                  <Text textAlign='center' color='black' fontSize='4xl' fontWeight='bold'>Contact</Text>
+                  <HStack>
+                    <FormControl w='auto' color='black' bg='white' borderRadius='2xl' p='8' boxShadow='0 0 10px 0 #e6e6e6'>
+                      <FormLabel>Name:</FormLabel>
+                      <InputGroup>
+
+                        <InputLeftElement
+                          pointerEvents="none"
+                          Icon mt='3' h='5' as={MdPermIdentity}
+
+                        />
+
+                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                      </InputGroup>
+                      <FormLabel>Mail:</FormLabel>
+                      <InputGroup>
+
+                        <InputLeftElement
+                          pointerEvents="none"
+                          Icon mt='3' h='5' as={AiOutlineMail}
+
+                        />
+
+                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                      </InputGroup>
+                      <FormLabel>Phone:</FormLabel>
+                      <InputGroup>
+
+                        <InputLeftElement
+                          pointerEvents="none"
+                          Icon mt='3' h='5' as={BsPhone}
+                        />
+
+                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                      </InputGroup>
+                      <Box>
+                        <FormLabel>Message:</FormLabel>
+                        <Textarea _hover={{ borderColor: '#9d9d9d' }} borderColor='#9d9d9d' maxH='70' id="desc" />
+                      </Box>
+                      <Flex justifyContent='center' pt='5'>
+                        <Button fontSize='large' type='submit'
+                          colorScheme='#9d9d9d'
+                          variant='outline'
+                          color='black'
+                          border='1px solid #9d9d9d'
+                          _hover={{
+                            bgColor: '#9d9d9d',
+                            color: 'white',
+                          }}>
+                          Submit
+                        </Button>
+
+                      </Flex>
+                    </FormControl>
+
                   </HStack>
 
-                </Box>
-              </motion.div>
 
-            </Flex>
+                </VStack>
 
-          </Box>
+                <HStack p='6' spacing='5' justifyContent='center'>
+                  <Link color='black'>tdennis.developer@gmail.com</Link>
+                  <Link color='black' _hover={{ bg: 'none' }} bg='none'>Phone: +234 816 354 5039</Link>
+                </HStack>
 
-        </motion.div>
+              </Box>
+            </motion.div>
+
+
+
+
+
+          </motion.div>
+        </Box>
       </Box>
     </VStack>
   )
