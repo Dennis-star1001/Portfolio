@@ -43,11 +43,11 @@ export default function Home() {
 
 
   return (
+    <Box bg='white' h='auto'>
+      <VStack justifyContent='center'>
+        {/* NAVBAR */}
 
-    <VStack justifyContent='center' bg='white' h='auto'>
-      {/* NAVBAR */}
-      <Box>
-        <Box bg='white' borderBottom='1px solid #f2f2f2' id='home'>
+        <Box borderBottom='1px solid #f2f2f2' id='home' >
           <HStack justifyContent='center' spacing='10' alignItems='center' h='10vh'>
             <Box>
               <Button onClick={() => Router.push('/')} fontSize='25' color='#6c63ff' fontWeight='bold'>Dev.Dennis</Button></Box>
@@ -72,56 +72,53 @@ export default function Home() {
           <Divider />
         </Box>
         <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-          <Box >
-            <Box bg='white' p="10"  >
 
 
-              <Box borderBottom='1px solid #f2f2f2'  className='landing-page'>
-                <motion.div variants={stagger}>
-                  <Flex className='flex' justifyContent='space-around' alignItems='center' >
-                    <VStack align='left' spacing='5'>
-                      <motion.div variants={fadInUp}>
-                        <Text color='#000' fontSize='70' fontWeight='medium' maxW='xl'>Dennis Charity</Text>
-                        <Text color='#9da2ab' fontSize='2xl' fontWeight='normal'>I am a Frontend Developer and UI/UX Developer</Text>
-                        <Text color='#9d9d9d' fontSize='sm'>Your satisfaction is our priority</Text>
-                      </motion.div>
-                      <AnchorLink href='#contact'>
-                        <Button w='28' onClick={() => Router.push('/')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
-                      </AnchorLink>
-                    </VStack>
-                    <motion.div variants={fadInUp} pt='10'>
-                      <Box className='main-png'>
-                        <Image src='/first.svg' alt='dennis' width='500' height='500' />
-                      </Box>
 
-                    </motion.div>
-                  </Flex>
+          <Box borderBottom='1px solid #f2f2f2' className='landing-page'>
+            <motion.div variants={stagger}>
+              <Flex className='flex' justifyContent='space-around' alignItems='center' >
+                <VStack align='left' spacing='5'>
+                  <motion.div variants={fadInUp}>
+                    <Text color='#000' fontSize='70' fontWeight='medium' maxW='xl'>Dennis Charity</Text>
+                    <Text color='#9da2ab' fontSize='2xl' fontWeight='normal'>I am a Frontend Developer and UI/UX Developer</Text>
+                    <Text color='#9d9d9d' fontSize='sm'>Your satisfaction is our priority</Text>
+                  </motion.div>
+                  <AnchorLink href='#contact'>
+                    <Button w='28' onClick={() => Router.push('/')} bg='#6c63ff' color='white' outline='2px solid white' _hover={{ outline: '2px solid #6c63ff', color: '#6c63ff', bg: 'white' }}>Let`s Talk</Button>
+                  </AnchorLink>
+                </VStack>
+                <motion.div variants={fadInUp} pt='10'>
+                  <Box className='main-png'>
+                    <Image src='/first.svg' alt='dennis' width='500' height='500' />
+                  </Box>
+
                 </motion.div>
-              </Box>
-            </Box>
+              </Flex>
+            </motion.div>
           </Box>
+
         </motion.div>
 
         {/* ABOUT PAGE */}
 
         <motion.div exit={{ opacity: 3 }} initial='initial' animate='animate' h='100vh'>
-          <Box pb='28' bg='white' className='about' overflow='hidden' borderBottom='1px solid #f2f2f2' id='about'>
+          <Box pb='28' className='about' borderBottom='1px solid #f2f2f2' id='about'>
             <Flex className='about' justifyContent='space-around' h='fit-content' pt='10'>
               <motion.div variants={fadInUp} >
                 <VStack justifyContent='left'>
                   <Text textAlign='left' fontSize='3xl' fontWeight='bold' color='black' pr='200'>About me</Text>
-                  <VStack pr='5'>
-                    <HStack>
-                      <Box border='1px solid #f2f2f2' maxW='400px' borderRadius='xl'>
-                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>
-                          Hi, i am Temoye Dennis Charity. I am a 20 year old Boy. I am just interested in creating something beautiful for you with my Skills</Text>
-                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>I am a Frontend Developer</Text>
-                        <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>Tools: ReactJS, Chakra UI, Javascript, CSS</Text>
-                        <Text textAlign='left' p='4' color='#515660'></Text>
-                      </Box>
 
-                    </HStack>
-                  </VStack>
+                  <HStack>
+                    <Box border='1px solid #f2f2f2' maxW='400px' borderRadius='xl'>
+                      <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>
+                        Hi, i am Temoye Dennis Charity. I am a 20 year old Boy. I am just interested in creating something beautiful for you with my Skills</Text>
+                      <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>I am a Frontend Developer</Text>
+                      <Text textAlign='left' p='4' color='#515660' fontWeight='medium'>Tools: ReactJS, Chakra UI, Javascript, CSS</Text>
+                      <Text textAlign='left' p='4' color='#515660'></Text>
+                    </Box>
+
+                  </HStack>
                 </VStack>
               </motion.div>
               <VStack justifyContent='center' alignItems='center'>
@@ -133,12 +130,12 @@ export default function Home() {
         </motion.div>
 
         {/* PROJECTS */}
-        <VStack className='project' bg='white' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
+        <VStack className='project' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
           <Text color='black' fontWeight='bold' fontSize='3xl'>Choose your favorite Project</Text>
           <Text fontSize='sm' color='black'>This are my projects</Text>
 
           <VStack pt='20'>
-            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
               <Box border='1px solid #f2f2f2' h='auto' w='auto'>
                 <Image src='/M-system.png' alt='management system' height='300' width='700px' />
               </Box>
@@ -150,8 +147,8 @@ export default function Home() {
                 </VStack>
               </Box>
             </VStack>
-            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' h='auto' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-              <Box border='1px solid #f2f2f2' h='auto' w='auto'>
+            <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
+              <Box border='1px solid #f2f2f2'>
                 <Image src='/idea.png' alt='management system' height='300' width='700px' />
               </Box>
               <Box maxW='56'>
@@ -162,57 +159,19 @@ export default function Home() {
                 </VStack>
               </Box>
             </VStack>
-            {/* <Flex flexDirection='row-reverse' justifyContent='space-around' align='center' border='1px solid #f2f2f2' h='48' w='1000px' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-              <Box border='1px solid #f2f2f2' h='40' w='300px'>
-                <Image src='/headset.jpg' alt='management system' height='160' width='300' />
-              </Box>
-              <Box maxW='56'>
-                <VStack>
-                  <Text color='black' fontSize='xl'>Management system</Text>
-                  <Text color='#cacaca'>Language: ReactJS</Text>
-                  <Text color='#cacaca'>Styling Language: Chakra ui</Text>
-                </VStack>
-              </Box>
-            </Flex> */}
-          </VStack>
-          {/* <VStack pr='5' spacing='10'>
-            <HStack spacing='10'>
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-            </HStack>
-            <HStack spacing='10'>
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-              <Button border='1px solid #f2f2f2' h='48' w='80' borderRadius='xl' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
-                <Image src='/M-system.png' alt='management system' height='160' width='300' />
-              </Button>
-            </HStack>
           </VStack>
 
- */}
         </VStack>
 
         {/* CONTACT PAGE */}
-        <Box bg='white' className='Contact'>
+        <Box >
           <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' id='contact'>
 
 
 
 
             <motion.div variants={fadInUp}>
-              <Box h='100vh'>
+              <Box h='100vh' className='Contact'>
 
 
                 <VStack spacing='5' >
@@ -290,7 +249,8 @@ export default function Home() {
 
           </motion.div>
         </Box>
-      </Box>
-    </VStack>
+
+      </VStack>
+    </Box>
   )
 }
