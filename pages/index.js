@@ -188,7 +188,7 @@ export default function Home() {
 
                         />
 
-                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                        <Input type="text" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
                       </InputGroup>
                       <FormLabel>Mail:</FormLabel>
                       <InputGroup>
@@ -199,7 +199,7 @@ export default function Home() {
 
                         />
 
-                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                        <Input type="email" placeholder="Email" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
                       </InputGroup>
                       <FormLabel>Phone:</FormLabel>
                       <InputGroup>
@@ -209,14 +209,14 @@ export default function Home() {
                           Icon mt='3' h='5' as={BsPhone}
                         />
 
-                        <Input type="tel" placeholder="Name" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
+                        <Input type="tel" placeholder="Phone Number" borderColor='#9d9d9d' _hover={{ borderColor: '#9d9d9d' }} />
                       </InputGroup>
                       <Box>
                         <FormLabel>Message:</FormLabel>
                         <Textarea _hover={{ borderColor: '#9d9d9d' }} borderColor='#9d9d9d' maxH='70' id="desc" />
                       </Box>
                       <Flex justifyContent='center' pt='5'>
-                        <Button fontSize='large' type='submit'
+                        <Button on fontSize='large' type='submit'
                           colorScheme='#9d9d9d'
                           variant='outline'
                           color='black'
