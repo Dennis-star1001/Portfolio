@@ -172,7 +172,7 @@ export default function Home() {
 
 
             <motion.div variants={fadInUp}>
-              <Box h='100vh' className='Contact'>
+              <Box h='110vh' className='Contact'>
 
 
                 <VStack spacing='5' >
