@@ -172,10 +172,10 @@ export default function Home() {
 
 
             <motion.div variants={fadInUp}>
-              <Box h='110vh' className='Contact'>
+              <Box className='Contact'>
 
 
-                <VStack spacing='5' >
+                <VStack spacing='16' >
                   <Text textAlign='center' color='black' fontSize='4xl' fontWeight='bold'>Contact</Text>
                   <HStack>
                     <FormControl w='auto' color='black' bg='white' borderRadius='2xl' p='8' boxShadow='0 0 10px 0 #e6e6e6'>
