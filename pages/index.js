@@ -133,7 +133,7 @@ export default function Home() {
         {/* PROJECTS */}
         <VStack className='project' borderBottom='1px solid #f2f2f2' pt='10' pb='10' id='project'>
           <Text color='black' fontWeight='bold' fontSize='3xl'>Choose your favorite Project</Text>
-          <Text fontSize='sm' color='black'>This are my projects</Text>
+          <Text fontSize='sm' color='black'>These are my projects</Text>
 
           <VStack pt='20'>
             <VStack flexDirection='column' align='center' justifyContent='space-around' border='1px solid #f2f2f2' pt='3' color='black' textAlign='left' p='5' fontSize='sm'>
