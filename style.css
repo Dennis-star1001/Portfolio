@@ -1,10 +1,13 @@
 @media screen and (max-width: 768px) {
   body{
-   
+   /* margin-left: 200px; */
     display:flex;
     flex-direction: column;
     justify-content: center;
 
+  }
+  .Static{
+    width: 150vw;
   }
   .landing-page{
     margin-top: 100px;
@@ -39,5 +42,21 @@
   }
   .Contact{
     height: 300vh;
+  }
+ }
+ @media screen and (max-width: 320px) {
+
+  .Static{
+    width: 170vw;
+    height: auto;
+    padding-bottom: 30px;
+  }
+ }
+ @media screen and (max-width: 280px) {
+
+  .Static{
+    width: 190vw;
+    height: auto;
+    padding-bottom: 30px;
   }
  }

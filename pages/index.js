@@ -43,8 +43,9 @@ export default function Home() {
 
 
   return (
-    <Box bg='white' h='auto'>
-      <VStack justifyContent='center'>
+    <>
+    <Box className='Static'  h='auto' bg='white'>
+    
         {/* NAVBAR */}
 
         <Box borderBottom='1px solid #f2f2f2' id='home' >
@@ -250,7 +251,8 @@ export default function Home() {
           </motion.div>
         </Box>
 
-      </VStack>
+      
     </Box>
+    </>
   )
 }
